@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equive="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>RegistrationForm</title>
+    </head>
+    <body>
+        
+
+        <div class="container" >
+            <div class="nav-bar">
+                <nav class="navbar">
+                    <h3 class="nav-heading">Enter C.name</h3> </nav>
+            </div>
+            <hr>
+           <br>
+           
+
+            <div class="title">Enter your mail.</div>
+                <form action="#">
+                    <div class="user-details">
+                        <!-- Left box -->
+                        <div class="input-box">
+                            <div class="left-container">
+                              <textarea name="mailids" id="mailIds" cols="61" rows="10">test089123018310831@gmail3.com;test12342324234@gmail2.com;testsadfasdlfasjfas@gmail3.com</textarea>
+                              <br><br>
+                              <input type="email" name="email" id="email" placeholder="Enter your Email here..." value="test089123018310831@gmail3.com">
+                              <br><br>
+                              <button type="submit" id="submitButton" class="button">Verify</button>
+                              <br><br>
+                              <div class="content" id="prompt-message"></div>
+                            </div>
+                          </div>
+
+                       
+
+                        <!-- Right box -->
+                        <div class="input-box">
+                            
+                            
+                            
+                            
+                            <div class="right-container" >
+                                
+                                <!-- <button type="reset" class="button2">Reset</button> --><p class="btn"><input type="button" value="Refresh" onClick="refresh(this)" style="width:100px;  margin-left:-30px"></p>                         
+
+                                <br>
+                                <!-- <form action="" method="post"> -->
+                                    <table class="table-right"  id="myForm">
+                                        <tr>
+                                            <th>Email</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                          </tr>
+                                        <!-- <hr> -->
+                                        <tr>
+                                            <!-- here the data will show -->
+                                            <!-- <td><?= item[0] ?></td>
+                                            <td><?= item[1]?></td>
+                                            <td><?= item[2]?></td> -->
+                                            <td>sahoo@gmail.com</td>
+                                            <td>11/07/2022</td>
+                                            <td>hello</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>sahoo@gmail.com</td>
+                                            <td>11/07/2022</td>
+                                            <td>hello</td>
+                                        </tr>
+                                    </table>
+                                <!-- </form> -->
+                                
+                            </div>
+                        </div>
+
+                    </div>                    
+                <!-- </form> -->
+            </div>
+
+<script src="script.js"></script>
+<script>
+
+
+function refresh(){
+    window.location.reload("Refresh");
+    alert('hello');
+   
+}
+</script>
+
+    </body>
+</html>
