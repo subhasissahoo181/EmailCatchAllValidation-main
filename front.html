@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RegistrationForm</title>
+  <!-- <link rel="stylesheet" href="home.css"> -->
+  <link rel="stylesheet" href="home2.css">
+</head>
+<!-- <?!= include("css.html") ?> -->
+
+<body>
+
+  <div class="container">
+    <div class="nav-bar">
+      <nav class="navbar">
+        <h3 class="nav-heading">The Links Guy</h3>
+      </nav>
+    </div>
+    <hr>
+    <br>
+
+
+    <div class="title">
+      <p> Hello <?= userEmail ?>! subhasissahoo@gmail.com</p>
+      <p>Welcome to Catch All Email validator</p>
+    </div>
+    <form action="#">
+      <div class="user-details">
+        <!-- Left box -->
+        <div class="input-box">
+          <div class="left-container">
+            <textarea name="mailids" id="mailIds"  placeholder="Enter emails ids separated by comma" cols="61" rows="10"></textarea>
+            <br><br>
+            <button type="submit" id="submitButton" class="button">Submit Request</button>
+            <br><br>
+            <div class="content" id="prompt-message"></div>
+          </div>
+          <i id="email" style="display:none"><pre><?=userEmail?></pre></i>
+          <br><br>
+        </div>
+
+        <!-- <div class="input-box vr"></div> -->
+        <!-- Right box -->
+        <div class="right-container-btn">
+            <button type="button" class="btn"value="Refresh" onClick="refresh(this)" >Refresh</button>
+            
+          </div>
+        <div class="input-box">
+          <div class="right-container">
+            
+            <br>
+            <table class="table-right" id="dataTable">
+              <thead>
+                <tr>
+                  <th>Email</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+              <tr>
+                <td>subhasissahoo1234@gmail.com</td>
+                <td>9876543209</td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quod totam impedit blanditiis eaque repellat!</td>
+              </tr>
+
+              
+
+
+              <!-- <hr> -->
+              <!-- <tbody>
+                <? outputData.forEach((item, i) => { ?>
+                <tr>
+                  <td>
+                    <?= item[0] ?>
+                  </td>
+                  <td>
+                    <?= item[1]?>
+                  </td>
+                  <td word-wrap:break-word>
+                    <?= item[2]?>
+                  </td>
+                </tr>
+                <? }) ?>
+              </tbody> -->
+            </table>
+            <!-- </form> -->
+
+          </div>
+        </div>
+
+      </div>
+      <!-- </form> -->
+  </div>
+  <!-- <?!= include("js.html") ?> -->
+  <script>
+    function refresh(){
+        window.location.reload("Refresh");
+        alert('hello');       
+    }
+    </script>
+</body>
+
+</html>

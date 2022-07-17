@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Login Form Example</title>
+   <link rel="stylesheet" href="login.css"> 
+  <?!= include("login_css.html") ?>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="login-form">
+    <form action="" method="">
+      <div class="content">
+        <img src="https://drive.google.com/uc?export=view&id=1qsXsmNOKo-rUPsooxcaSVMtSDtpi7Gdr" class="img img-responsive img-circle center-block" width=150 height=130>
+        <p></p>
+        <span class="content">Welcome!!<br>Sign in to The Links Guys Tools Portal to continue</span>
+        <p> </p>
+        <p> </p>
+        .
+        <div class="input-field">
+          <input type="email" placeholder="Email" id="mail" value="" autocomplete="nope" required>
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Password" id="pwd" value="" autocomplete="new-password" required>
+        </div>
+      </div>
+      <hr>
+      <div class="action">
+        <input type="submit" id="btnsubmit" value="Sign In"></input>
+      </div>
+    </form>
+    <div style="display: none;" class="content" id="prompt-message"></div>
+    <a style="display: none;" href="https://google.com" target="_blank" class="button" id="drivelink">Go to Google
+      Drive</a>
+  </div>
+  <!-- partial -->
+  <script>
+    let submitbtn = document.getElementById("btnsubmit")
+    let promptDiv = document.getElementById("prompt-message")
+    let drivelink = document.getElementById("drivelink")
+
+    submitbtn.addEventListener("click", (e) => {
+      e.preventDefault()
+      promptDiv.innerHTML = `<label>Submitting...</label>`
+      promptDiv.style.display = 'inline'
+      let uid = document.getElementById("mail").value
+      let pwd = document.getElementById("pwd").value
+
+      google.script.run
+          .withSuccessHandler((cookie)=>{
+              console.log(cookie)
+              reload(cookie)
+          })
+          .withFailureHandler((error) => {
+                promptDiv.innerHTML = `<label class='red-text'>Failed! Please contact us at  for any questions.</label>`
+                drivelink.style.display = 'none'
+                drivelink.href = ''
+          })
+          .validateCredentials({uid, pwd})
+
+      function reload(cookie) {
+            var linkAddr
+            google.script.run.withSuccessHandler(function(value) {
+                window.open(value + `?cookie=${cookie}` , '_top');
+            }).webAppURL();
+        }
+  })
+  </script>
+
+</body>
+
+</html>

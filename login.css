@@ -1,0 +1,168 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+    :root {
+      --red: #EA4335;
+      --green: #34A853;
+      --blue: #4285F4;
+      --yellow: #FBBC04;
+      --gray: #eee;
+      --black: #333;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+    body {
+      background-color:rgb(242, 245, 242);
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .login-form {
+      background: rgb(176, 244, 244);
+      width: 500px;
+      margin: 65px auto;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      border-radius: 4px;
+      box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+    }
+    .login-form h1 {
+      padding: 35px 35px 0 35px;
+      font-weight: 300;
+    }
+    .login-form .content {
+      padding: 30px;
+      text-align: center;
+    }
+    .login-form .input-field {
+      padding: 12px 5px;
+      
+    }
+    .login-form .input-field input {
+      
+      font-size: 16px;
+      display: block;
+      font-family: 'Rubik', sans-serif;
+      /* width: 100%; */
+      width: 300px;
+      /* margin-left: 50px; */
+      padding: 10px 1px;
+      border: 0;
+      border-bottom: 1px solid #747474;
+      outline: none;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+    }
+    .login-form .input-field input::-webkit-input-placeholder {
+      text-transform: uppercase;
+    }
+    .login-form .input-field input::-moz-placeholder {
+      text-transform: uppercase;
+    }
+    .login-form .input-field input:-ms-input-placeholder {
+      text-transform: uppercase;
+    }
+    .login-form .input-field input::-ms-input-placeholder {
+      text-transform: uppercase;
+    }
+    .login-form .input-field input::placeholder {
+      text-transform: uppercase;
+    }
+    .login-form .input-field input:focus {
+      border-color: #222;
+    }
+    .login-form a.link {
+      text-decoration: none;
+      color: #747474;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .login-form .action {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+    }
+    .login-form .action input {
+      width: 100%;
+      border: none;
+      padding: 18px;
+      font-family: 'Rubik', sans-serif;
+      cursor: pointer;
+      text-transform: uppercase;
+      background: #e8e9ec;
+      color: #777;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 0;
+      letter-spacing: 0.2px;
+      outline: 0;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+    }
+    .login-form .action input:hover {
+      /* background: #d8d8d8; */
+      /* background: #d0f5f7;  */
+      background: #aff8a6; 
+    }
+    .login-form .action input:nth-child(2) {
+      background: #2d3b55;
+      color: #fff;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 4px;
+    }
+    .login-form .action input:nth-child(2):hover {
+      background: #3c4d6d;
+    }
+    a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    background: green;
+    color: initial;
+    }
+    .green-text {
+        color: var(--green);
+    }
+    
+    .red-text {
+        color: var(--red);
+    }
+    #mail{
+      border-radius:10px;
+      padding-left: 5px;
+    }
+    #pwd{
+        border-radius:10px;
+      padding-left: 5px;
+
+    }
+    .input-field input[type = "email"]:focus,.input-field input[type = "password"]:focus{
+        width: 350px;
+    }
+    .input-field input[type = "email"],.input-field input[type = "password"]{
+            border:0;
+            background: none;
+            display: block;
+            margin: 5px auto;
+            text-align: center;
+            border: 2px solid #2fe176;           
+            padding: 14px 10px;
+            width: 300px;
+            outline: none;
+            color: rgb(238, 226, 224);
+            border-radius: 24px;
+            transition: 0.25s;
+            
+        }
+</style>
